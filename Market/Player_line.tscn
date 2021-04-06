@@ -1,0 +1,423 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Market/Player_line_button.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.207843, 1, 0.152941, 0.207843 )
+
+[node name="Panel" type="Panel"]
+margin_left = -1.49829
+margin_right = 1228.5
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="."]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 205.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 200, 0 )
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="position" type="Label" parent="."]
+margin_left = 220.0
+margin_top = 5.0
+margin_right = 250.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 30, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="foot" type="Label" parent="."]
+margin_left = 295.0
+margin_top = 5.0
+margin_right = 295.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="league" type="Label" parent="."]
+margin_left = 357.0
+margin_top = 5.0
+margin_right = 357.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="age" type="Label" parent="."]
+margin_left = 465.0
+margin_top = 5.0
+margin_right = 485.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="height" type="Label" parent="."]
+margin_left = 580.0
+margin_top = 5.0
+margin_right = 600.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="overall" type="Label" parent="."]
+margin_left = 700.0
+margin_top = 5.0
+margin_right = 720.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="crossing" type="Label" parent="."]
+margin_left = 820.0
+margin_top = 5.0
+margin_right = 840.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="finishing" type="Label" parent="."]
+margin_left = 940.0
+margin_top = 5.0
+margin_right = 960.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="short_passing" type="Label" parent="."]
+margin_left = 1060.0
+margin_top = 5.0
+margin_right = 1080.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="volleys" type="Label" parent="."]
+margin_left = 1180.0
+margin_top = 5.0
+margin_right = 1200.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dribbling" type="Label" parent="."]
+margin_left = 1300.0
+margin_top = 5.0
+margin_right = 1320.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+
+[node name="curve" type="Label" parent="."]
+margin_left = 1420.0
+margin_top = 5.0
+margin_right = 1440.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="long_passing" type="Label" parent="."]
+margin_left = 1540.0
+margin_top = 5.0
+margin_right = 1560.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ball_control" type="Label" parent="."]
+margin_left = 1655.0
+margin_top = 5.0
+margin_right = 1675.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="acceleration" type="Label" parent="."]
+margin_left = 1770.0
+margin_top = 5.0
+margin_right = 1790.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprint_speed" type="Label" parent="."]
+margin_left = 1890.0
+margin_top = 5.0
+margin_right = 1910.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="agility" type="Label" parent="."]
+margin_left = 2010.0
+margin_top = 5.0
+margin_right = 2020.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="reactions" type="Label" parent="."]
+margin_left = 2130.0
+margin_top = 5.0
+margin_right = 2150.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="balance" type="Label" parent="."]
+margin_left = 2250.0
+margin_top = 5.0
+margin_right = 2270.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+
+[node name="shot_power" type="Label" parent="."]
+margin_left = 2365.0
+margin_top = 5.0
+margin_right = 2385.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="strength" type="Label" parent="."]
+margin_left = 2485.0
+margin_top = 5.0
+margin_right = 2505.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="long_shots" type="Label" parent="."]
+margin_left = 2600.0
+margin_top = 5.0
+margin_right = 2620.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="aggression" type="Label" parent="."]
+margin_left = 2720.0
+margin_top = 5.0
+margin_right = 2740.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="interceptions" type="Label" parent="."]
+margin_left = 2840.0
+margin_top = 5.0
+margin_right = 2860.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="positioning" type="Label" parent="."]
+margin_left = 2960.0
+margin_top = 5.0
+margin_right = 2980.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vision" type="Label" parent="."]
+margin_left = 3080.0
+margin_top = 5.0
+margin_right = 3100.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="penalties" type="Label" parent="."]
+margin_left = 3200.0
+margin_top = 5.0
+margin_right = 3220.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+
+[node name="marking" type="Label" parent="."]
+margin_left = 3320.0
+margin_top = 5.0
+margin_right = 3340.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="standing_tackle" type="Label" parent="."]
+margin_left = 3440.0
+margin_top = 5.0
+margin_right = 3460.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sliding_tackle" type="Label" parent="."]
+margin_left = 3560.0
+margin_top = 5.0
+margin_right = 3580.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gk_diving" type="Label" parent="."]
+margin_left = 3680.0
+margin_top = 5.0
+margin_right = 3700.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gk_handling" type="Label" parent="."]
+margin_left = 3800.0
+margin_top = 5.0
+margin_right = 3820.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gk_kicking" type="Label" parent="."]
+margin_left = 3920.0
+margin_top = 5.0
+margin_right = 3940.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gk_positioning" type="Label" parent="."]
+margin_left = 4035.0
+margin_top = 5.0
+margin_right = 4055.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gk_reflexes" type="Label" parent="."]
+margin_left = 4150.0
+margin_top = 5.0
+margin_right = 4170.0
+margin_bottom = 45.0
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_top = 5.0
+margin_right = 4210.0
+margin_bottom = 41.0
+rect_min_size = Vector2( 4210, 36 )
+custom_styles/focus = SubResource( 1 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="."]
+margin_right = 4210.0
+margin_bottom = 4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
