@@ -1,0 +1,119 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Friends/FriendLine.gd" type="Script" id=1]
+
+[node name="Panel" type="Panel"]
+self_modulate = Color( 0.266667, 0, 1, 0.517647 )
+margin_right = 1200.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line" type="HBoxContainer" parent="."]
+margin_right = 1200.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Email" type="HBoxContainer" parent="Line"]
+margin_right = 397.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="EmailLbl" type="Label" parent="Line/Email"]
+modulate = Color( 0.905882, 0.905882, 0.905882, 1 )
+margin_left = 175.0
+margin_top = 13.0
+margin_right = 222.0
+margin_bottom = 27.0
+text = "COUCU"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pseudo" type="HBoxContainer" parent="Line"]
+margin_left = 401.0
+margin_right = 798.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="PseudoLbl" type="Label" parent="Line/Pseudo"]
+margin_left = 175.0
+margin_top = 13.0
+margin_right = 222.0
+margin_bottom = 27.0
+text = "COUCU"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Actions" type="HBoxContainer" parent="Line"]
+margin_left = 802.0
+margin_right = 1200.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="DelBtn" type="Button" parent="Line/Actions" groups=[
+"FriendsListGrp",
+]]
+visible = false
+modulate = Color( 1, 0, 0, 1 )
+self_modulate = Color( 1, 0, 0, 1 )
+show_behind_parent = true
+margin_right = 398.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 60, 40 )
+size_flags_horizontal = 3
+text = "DELETE"
+
+[node name="AcceptBtn" type="Button" parent="Line/Actions" groups=[
+"FriendRequestGrp",
+]]
+visible = false
+self_modulate = Color( 0.596078, 0.847059, 0.101961, 1 )
+show_behind_parent = true
+margin_right = 398.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 60, 40 )
+size_flags_horizontal = 3
+text = "ACCEPT"
+
+[node name="RejectBtn" type="Button" parent="Line/Actions" groups=[
+"FriendRequestGrp",
+]]
+visible = false
+modulate = Color( 1, 0, 0, 1 )
+self_modulate = Color( 1, 0, 0, 1 )
+show_behind_parent = true
+margin_left = 201.0
+margin_right = 398.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 60, 40 )
+size_flags_horizontal = 3
+text = "REJECT"
+
+[node name="CancelBtn" type="Button" parent="Line/Actions" groups=[
+"WaitingListGrp",
+]]
+visible = false
+modulate = Color( 1, 0, 0, 1 )
+self_modulate = Color( 1, 0, 0, 1 )
+show_behind_parent = true
+margin_right = 398.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 60, 40 )
+size_flags_horizontal = 3
+text = "CANCEL"
+[connection signal="pressed" from="Line/Actions/DelBtn" to="." method="_on_DelBtn_pressed"]
+[connection signal="pressed" from="Line/Actions/AcceptBtn" to="." method="_on_AcceptBtn_pressed"]
+[connection signal="pressed" from="Line/Actions/RejectBtn" to="." method="_on_RejectBtn_pressed"]
+[connection signal="pressed" from="Line/Actions/CancelBtn" to="." method="_on_CancelBtn_pressed"]

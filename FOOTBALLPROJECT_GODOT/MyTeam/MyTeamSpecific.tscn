@@ -1,0 +1,1039 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://MyTeam/MyTeamSpecific.gd" type="Script" id=1]
+[ext_resource path="res://fonts/Roboto-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://fonts/Graduate-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 18
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 3 )
+
+[node name="MyTeamSpecific" type="Control"]
+margin_right = 1240.0
+margin_bottom = 250.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Container" type="VBoxContainer" parent="."]
+margin_right = 1240.0
+margin_bottom = 250.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Nav" type="HBoxContainer" parent="Container"]
+margin_right = 1240.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 30, 30 )
+size_flags_horizontal = 3
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/Nav"]
+margin_right = 1240.0
+margin_bottom = 30.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/Nav/HBoxContainer"]
+margin_right = 618.0
+margin_bottom = 30.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="Container/Nav/HBoxContainer/HBoxContainer"]
+margin_left = 109.0
+margin_right = 509.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 400, 0 )
+size_flags_horizontal = 5
+size_flags_vertical = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Container/Nav/HBoxContainer"]
+margin_left = 622.0
+margin_right = 1240.0
+margin_bottom = 30.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="OptionButton2" type="OptionButton" parent="Container/Nav/HBoxContainer/HBoxContainer2"]
+margin_left = 109.0
+margin_right = 509.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 400, 0 )
+size_flags_vertical = 3
+
+[node name="Nav2" type="HBoxContainer" parent="Container"]
+margin_top = 34.0
+margin_right = 1240.0
+margin_bottom = 250.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/Nav2"]
+margin_right = 203.0
+margin_bottom = 216.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/Nav2/VBoxContainer"]
+margin_right = 203.0
+margin_bottom = 32.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblfoot" type="Label" parent="Container/Nav2/VBoxContainer/HBoxContainer"]
+margin_left = 71.0
+margin_top = 5.0
+margin_right = 107.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Foot"
+
+[node name="foot" type="Label" parent="Container/Nav2/VBoxContainer/HBoxContainer" groups=[
+"specific_stat",
+]]
+margin_left = 111.0
+margin_top = 6.0
+margin_right = 131.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Container/Nav2/VBoxContainer"]
+margin_top = 36.0
+margin_right = 203.0
+margin_bottom = 69.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblage" type="Label" parent="Container/Nav2/VBoxContainer/HBoxContainer2"]
+margin_left = 73.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Age"
+
+[node name="age" type="Label" parent="Container/Nav2/VBoxContainer/HBoxContainer2" groups=[
+"specific_stat",
+]]
+margin_left = 109.0
+margin_top = 7.0
+margin_right = 129.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Container/Nav2/VBoxContainer"]
+margin_top = 73.0
+margin_right = 203.0
+margin_bottom = 106.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblheight" type="Label" parent="Container/Nav2/VBoxContainer/HBoxContainer3"]
+margin_left = 63.0
+margin_top = 5.0
+margin_right = 116.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Height"
+
+[node name="height" type="Label" parent="Container/Nav2/VBoxContainer/HBoxContainer3" groups=[
+"specific_stat",
+]]
+margin_left = 120.0
+margin_top = 7.0
+margin_right = 140.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Container/Nav2/VBoxContainer"]
+margin_top = 110.0
+margin_right = 203.0
+margin_bottom = 142.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lbloverall" type="Label" parent="Container/Nav2/VBoxContainer/HBoxContainer4"]
+margin_left = 62.0
+margin_top = 5.0
+margin_right = 117.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Overall"
+
+[node name="overall" type="Label" parent="Container/Nav2/VBoxContainer/HBoxContainer4" groups=[
+"specific_stat",
+]]
+margin_left = 121.0
+margin_top = 6.0
+margin_right = 141.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="Container/Nav2/VBoxContainer"]
+margin_top = 146.0
+margin_right = 203.0
+margin_bottom = 179.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblcrossing" type="Label" parent="Container/Nav2/VBoxContainer/HBoxContainer5"]
+margin_left = 54.0
+margin_top = 5.0
+margin_right = 124.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Crossing"
+
+[node name="crossing" type="Label" parent="Container/Nav2/VBoxContainer/HBoxContainer5" groups=[
+"specific_stat",
+]]
+margin_left = 128.0
+margin_top = 7.0
+margin_right = 148.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="Container/Nav2/VBoxContainer"]
+margin_top = 183.0
+margin_right = 203.0
+margin_bottom = 216.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblfinishing" type="Label" parent="Container/Nav2/VBoxContainer/HBoxContainer6"]
+margin_left = 54.0
+margin_top = 5.0
+margin_right = 125.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Finishing"
+
+[node name="finishing" type="Label" parent="Container/Nav2/VBoxContainer/HBoxContainer6" groups=[
+"specific_stat",
+]]
+margin_left = 129.0
+margin_top = 7.0
+margin_right = 149.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Container/Nav2"]
+margin_left = 207.0
+margin_right = 410.0
+margin_bottom = 216.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/Nav2/VBoxContainer2"]
+margin_right = 203.0
+margin_bottom = 32.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblshort_passing" type="Label" parent="Container/Nav2/VBoxContainer2/HBoxContainer"]
+margin_left = 34.0
+margin_top = 5.0
+margin_right = 144.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Short Passing"
+
+[node name="short_passing" type="Label" parent="Container/Nav2/VBoxContainer2/HBoxContainer" groups=[
+"specific_stat",
+]]
+margin_left = 148.0
+margin_top = 6.0
+margin_right = 168.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Container/Nav2/VBoxContainer2"]
+margin_top = 36.0
+margin_right = 203.0
+margin_bottom = 69.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblvolleys" type="Label" parent="Container/Nav2/VBoxContainer2/HBoxContainer2"]
+margin_left = 61.0
+margin_top = 5.0
+margin_right = 118.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Volleys"
+
+[node name="volleys" type="Label" parent="Container/Nav2/VBoxContainer2/HBoxContainer2" groups=[
+"specific_stat",
+]]
+margin_left = 122.0
+margin_top = 7.0
+margin_right = 142.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Container/Nav2/VBoxContainer2"]
+margin_top = 73.0
+margin_right = 203.0
+margin_bottom = 106.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lbldribbling" type="Label" parent="Container/Nav2/VBoxContainer2/HBoxContainer3"]
+margin_left = 54.0
+margin_top = 5.0
+margin_right = 124.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Dribbling"
+
+[node name="dribbling" type="Label" parent="Container/Nav2/VBoxContainer2/HBoxContainer3" groups=[
+"specific_stat",
+]]
+margin_left = 128.0
+margin_top = 7.0
+margin_right = 148.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Container/Nav2/VBoxContainer2"]
+margin_top = 110.0
+margin_right = 203.0
+margin_bottom = 142.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblcurve" type="Label" parent="Container/Nav2/VBoxContainer2/HBoxContainer4"]
+margin_left = 66.0
+margin_top = 5.0
+margin_right = 113.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Curve"
+
+[node name="curve" type="Label" parent="Container/Nav2/VBoxContainer2/HBoxContainer4" groups=[
+"specific_stat",
+]]
+margin_left = 117.0
+margin_top = 6.0
+margin_right = 137.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="Container/Nav2/VBoxContainer2"]
+margin_top = 146.0
+margin_right = 203.0
+margin_bottom = 179.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lbllong_passing" type="Label" parent="Container/Nav2/VBoxContainer2/HBoxContainer5"]
+margin_left = 36.0
+margin_top = 5.0
+margin_right = 143.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Long Passing"
+
+[node name="long_passing" type="Label" parent="Container/Nav2/VBoxContainer2/HBoxContainer5" groups=[
+"specific_stat",
+]]
+margin_left = 147.0
+margin_top = 7.0
+margin_right = 167.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="Container/Nav2/VBoxContainer2"]
+margin_top = 183.0
+margin_right = 203.0
+margin_bottom = 216.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblball_control" type="Label" parent="Container/Nav2/VBoxContainer2/HBoxContainer6"]
+margin_left = 44.0
+margin_top = 5.0
+margin_right = 135.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Ball Control"
+
+[node name="ball_control" type="Label" parent="Container/Nav2/VBoxContainer2/HBoxContainer6" groups=[
+"specific_stat",
+]]
+margin_left = 139.0
+margin_top = 7.0
+margin_right = 159.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Container/Nav2"]
+margin_left = 414.0
+margin_right = 617.0
+margin_bottom = 216.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/Nav2/VBoxContainer3"]
+margin_right = 203.0
+margin_bottom = 32.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblacceleration" type="Label" parent="Container/Nav2/VBoxContainer3/HBoxContainer"]
+margin_left = 39.0
+margin_top = 5.0
+margin_right = 139.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Acceleration"
+
+[node name="acceleration" type="Label" parent="Container/Nav2/VBoxContainer3/HBoxContainer" groups=[
+"specific_stat",
+]]
+margin_left = 143.0
+margin_top = 6.0
+margin_right = 163.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Container/Nav2/VBoxContainer3"]
+margin_top = 36.0
+margin_right = 203.0
+margin_bottom = 69.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblsprint_speed" type="Label" parent="Container/Nav2/VBoxContainer3/HBoxContainer2"]
+margin_left = 38.0
+margin_top = 5.0
+margin_right = 140.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Sprint Speed"
+
+[node name="sprint_speed" type="Label" parent="Container/Nav2/VBoxContainer3/HBoxContainer2" groups=[
+"specific_stat",
+]]
+margin_left = 144.0
+margin_top = 7.0
+margin_right = 164.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Container/Nav2/VBoxContainer3"]
+margin_top = 73.0
+margin_right = 203.0
+margin_bottom = 106.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblagility" type="Label" parent="Container/Nav2/VBoxContainer3/HBoxContainer3"]
+margin_left = 65.0
+margin_top = 5.0
+margin_right = 114.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Agility"
+
+[node name="agility" type="Label" parent="Container/Nav2/VBoxContainer3/HBoxContainer3" groups=[
+"specific_stat",
+]]
+margin_left = 118.0
+margin_top = 7.0
+margin_right = 138.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Container/Nav2/VBoxContainer3"]
+margin_top = 110.0
+margin_right = 203.0
+margin_bottom = 142.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblreactions" type="Label" parent="Container/Nav2/VBoxContainer3/HBoxContainer4"]
+margin_left = 50.0
+margin_top = 5.0
+margin_right = 129.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Reactions"
+
+[node name="reactions" type="Label" parent="Container/Nav2/VBoxContainer3/HBoxContainer4" groups=[
+"specific_stat",
+]]
+margin_left = 133.0
+margin_top = 6.0
+margin_right = 153.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="Container/Nav2/VBoxContainer3"]
+margin_top = 146.0
+margin_right = 203.0
+margin_bottom = 179.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblbalance" type="Label" parent="Container/Nav2/VBoxContainer3/HBoxContainer5"]
+margin_left = 57.0
+margin_top = 5.0
+margin_right = 121.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Balance"
+
+[node name="balance" type="Label" parent="Container/Nav2/VBoxContainer3/HBoxContainer5" groups=[
+"specific_stat",
+]]
+margin_left = 125.0
+margin_top = 7.0
+margin_right = 145.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="Container/Nav2/VBoxContainer3"]
+margin_top = 183.0
+margin_right = 203.0
+margin_bottom = 216.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblshot_power" type="Label" parent="Container/Nav2/VBoxContainer3/HBoxContainer6"]
+margin_left = 43.0
+margin_top = 5.0
+margin_right = 135.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Shot Power"
+
+[node name="shot_power" type="Label" parent="Container/Nav2/VBoxContainer3/HBoxContainer6" groups=[
+"specific_stat",
+]]
+margin_left = 139.0
+margin_top = 7.0
+margin_right = 159.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="Container/Nav2"]
+margin_left = 621.0
+margin_right = 825.0
+margin_bottom = 216.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/Nav2/VBoxContainer4"]
+margin_right = 204.0
+margin_bottom = 32.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblstrength" type="Label" parent="Container/Nav2/VBoxContainer4/HBoxContainer"]
+margin_left = 55.0
+margin_top = 5.0
+margin_right = 124.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Strength"
+
+[node name="strength" type="Label" parent="Container/Nav2/VBoxContainer4/HBoxContainer" groups=[
+"specific_stat",
+]]
+margin_left = 128.0
+margin_top = 6.0
+margin_right = 148.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Container/Nav2/VBoxContainer4"]
+margin_top = 36.0
+margin_right = 204.0
+margin_bottom = 69.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lbllong_shots" type="Label" parent="Container/Nav2/VBoxContainer4/HBoxContainer2"]
+margin_left = 45.0
+margin_top = 5.0
+margin_right = 135.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Long Shots"
+
+[node name="long_shots" type="Label" parent="Container/Nav2/VBoxContainer4/HBoxContainer2" groups=[
+"specific_stat",
+]]
+margin_left = 139.0
+margin_top = 7.0
+margin_right = 159.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Container/Nav2/VBoxContainer4"]
+margin_top = 73.0
+margin_right = 204.0
+margin_bottom = 106.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblaggression" type="Label" parent="Container/Nav2/VBoxContainer4/HBoxContainer3"]
+margin_left = 45.0
+margin_top = 5.0
+margin_right = 135.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Aggression"
+
+[node name="aggression" type="Label" parent="Container/Nav2/VBoxContainer4/HBoxContainer3" groups=[
+"specific_stat",
+]]
+margin_left = 139.0
+margin_top = 7.0
+margin_right = 159.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Container/Nav2/VBoxContainer4"]
+margin_top = 110.0
+margin_right = 204.0
+margin_bottom = 142.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblinterceptions" type="Label" parent="Container/Nav2/VBoxContainer4/HBoxContainer4"]
+margin_left = 37.0
+margin_top = 5.0
+margin_right = 142.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Interceptions"
+
+[node name="interceptions" type="Label" parent="Container/Nav2/VBoxContainer4/HBoxContainer4" groups=[
+"specific_stat",
+]]
+margin_left = 146.0
+margin_top = 6.0
+margin_right = 166.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="Container/Nav2/VBoxContainer4"]
+margin_top = 146.0
+margin_right = 204.0
+margin_bottom = 179.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblpositioning" type="Label" parent="Container/Nav2/VBoxContainer4/HBoxContainer5"]
+margin_left = 46.0
+margin_top = 5.0
+margin_right = 134.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Positioning"
+
+[node name="positioning" type="Label" parent="Container/Nav2/VBoxContainer4/HBoxContainer5" groups=[
+"specific_stat",
+]]
+margin_left = 138.0
+margin_top = 7.0
+margin_right = 158.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="Container/Nav2/VBoxContainer4"]
+margin_top = 183.0
+margin_right = 204.0
+margin_bottom = 216.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblvision" type="Label" parent="Container/Nav2/VBoxContainer4/HBoxContainer6"]
+margin_left = 66.0
+margin_top = 5.0
+margin_right = 114.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Vision"
+
+[node name="vision" type="Label" parent="Container/Nav2/VBoxContainer4/HBoxContainer6" groups=[
+"specific_stat",
+]]
+margin_left = 118.0
+margin_top = 7.0
+margin_right = 138.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="Container/Nav2"]
+margin_left = 829.0
+margin_right = 1032.0
+margin_bottom = 216.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/Nav2/VBoxContainer5"]
+margin_right = 203.0
+margin_bottom = 32.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblpenalties" type="Label" parent="Container/Nav2/VBoxContainer5/HBoxContainer"]
+margin_left = 52.0
+margin_top = 5.0
+margin_right = 126.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Penalties"
+
+[node name="penalties" type="Label" parent="Container/Nav2/VBoxContainer5/HBoxContainer" groups=[
+"specific_stat",
+]]
+margin_left = 130.0
+margin_top = 6.0
+margin_right = 150.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Container/Nav2/VBoxContainer5"]
+margin_top = 36.0
+margin_right = 203.0
+margin_bottom = 69.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblmarking" type="Label" parent="Container/Nav2/VBoxContainer5/HBoxContainer2"]
+margin_left = 57.0
+margin_top = 5.0
+margin_right = 122.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Marking"
+
+[node name="marking" type="Label" parent="Container/Nav2/VBoxContainer5/HBoxContainer2" groups=[
+"specific_stat",
+]]
+margin_left = 126.0
+margin_top = 7.0
+margin_right = 146.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Container/Nav2/VBoxContainer5"]
+margin_top = 73.0
+margin_right = 203.0
+margin_bottom = 106.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblstanding_tackle" type="Label" parent="Container/Nav2/VBoxContainer5/HBoxContainer3"]
+margin_left = 25.0
+margin_top = 5.0
+margin_right = 153.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Standing Tackle"
+
+[node name="standing_tackle" type="Label" parent="Container/Nav2/VBoxContainer5/HBoxContainer3" groups=[
+"specific_stat",
+]]
+margin_left = 157.0
+margin_top = 7.0
+margin_right = 177.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Container/Nav2/VBoxContainer5"]
+margin_top = 110.0
+margin_right = 203.0
+margin_bottom = 142.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblsliding_tackle" type="Label" parent="Container/Nav2/VBoxContainer5/HBoxContainer4"]
+margin_left = 34.0
+margin_top = 5.0
+margin_right = 144.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Sliding Tackle"
+
+[node name="sliding_tackle" type="Label" parent="Container/Nav2/VBoxContainer5/HBoxContainer4" groups=[
+"specific_stat",
+]]
+margin_left = 148.0
+margin_top = 6.0
+margin_right = 168.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="Container/Nav2/VBoxContainer5"]
+margin_top = 146.0
+margin_right = 203.0
+margin_bottom = 179.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblgk_diving" type="Label" parent="Container/Nav2/VBoxContainer5/HBoxContainer5"]
+margin_left = 52.0
+margin_top = 5.0
+margin_right = 126.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Gk Diving"
+
+[node name="gk_diving" type="Label" parent="Container/Nav2/VBoxContainer5/HBoxContainer5" groups=[
+"specific_stat",
+]]
+margin_left = 130.0
+margin_top = 7.0
+margin_right = 150.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="Container/Nav2/VBoxContainer5"]
+margin_top = 183.0
+margin_right = 203.0
+margin_bottom = 216.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblgk_handling" type="Label" parent="Container/Nav2/VBoxContainer5/HBoxContainer6"]
+margin_left = 41.0
+margin_top = 5.0
+margin_right = 137.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Gk Handling"
+
+[node name="gk_handling" type="Label" parent="Container/Nav2/VBoxContainer5/HBoxContainer6" groups=[
+"specific_stat",
+]]
+margin_left = 141.0
+margin_top = 7.0
+margin_right = 161.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="VBoxContainer6" type="VBoxContainer" parent="Container/Nav2"]
+margin_left = 1036.0
+margin_right = 1240.0
+margin_bottom = 216.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/Nav2/VBoxContainer6"]
+margin_right = 204.0
+margin_bottom = 32.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblgk_kicking" type="Label" parent="Container/Nav2/VBoxContainer6/HBoxContainer"]
+margin_left = 49.0
+margin_top = 5.0
+margin_right = 131.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Gk Kicking"
+
+[node name="gk_kicking" type="Label" parent="Container/Nav2/VBoxContainer6/HBoxContainer" groups=[
+"specific_stat",
+]]
+margin_left = 135.0
+margin_top = 6.0
+margin_right = 155.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Container/Nav2/VBoxContainer6"]
+margin_top = 36.0
+margin_right = 204.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblgk_positioning" type="Label" parent="Container/Nav2/VBoxContainer6/HBoxContainer2"]
+margin_left = 33.0
+margin_top = 5.0
+margin_right = 146.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Gk Positioning"
+
+[node name="gk_positioning" type="Label" parent="Container/Nav2/VBoxContainer6/HBoxContainer2" groups=[
+"specific_stat",
+]]
+margin_left = 150.0
+margin_top = 6.0
+margin_right = 170.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Container/Nav2/VBoxContainer6"]
+margin_top = 72.0
+margin_right = 204.0
+margin_bottom = 104.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lblgk_reflexes" type="Label" parent="Container/Nav2/VBoxContainer6/HBoxContainer3"]
+margin_left = 43.0
+margin_top = 5.0
+margin_right = 137.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "Gk Reflexes"
+
+[node name="gk_reflexes" type="Label" parent="Container/Nav2/VBoxContainer6/HBoxContainer3" groups=[
+"specific_stat",
+]]
+margin_left = 141.0
+margin_top = 6.0
+margin_right = 161.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 20, 0 )
+custom_fonts/font = SubResource( 2 )
+align = 2
+valign = 1
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Container/Nav2/VBoxContainer6"]
+margin_top = 108.0
+margin_right = 204.0
+margin_bottom = 216.0
+rect_min_size = Vector2( 0, 108 )
+size_flags_vertical = 3
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/Nav2/VBoxContainer6/HBoxContainer4"]
+margin_right = 204.0
+margin_bottom = 108.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Button" type="Button" parent="Container/Nav2/VBoxContainer6/HBoxContainer4/VBoxContainer"]
+margin_top = 27.0
+margin_right = 204.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 0, 50 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.266667, 1, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+text = "ADD"
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+[connection signal="item_selected" from="Container/Nav/HBoxContainer/HBoxContainer/OptionButton" to="." method="_on_OptionButton_item_selected"]
+[connection signal="item_selected" from="Container/Nav/HBoxContainer/HBoxContainer2/OptionButton2" to="." method="_on_OptionButton2_item_selected"]
+[connection signal="pressed" from="Container/Nav2/VBoxContainer6/HBoxContainer4/VBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]

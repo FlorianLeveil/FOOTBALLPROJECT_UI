@@ -1,0 +1,478 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Market/Player_line_button.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.207843, 1, 0.152941, 0.207843 )
+
+[node name="Panel" type="Panel"]
+margin_left = -1.49829
+margin_right = 1198.5
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="Label" parent="HBoxContainer"]
+margin_top = 13.0
+margin_right = 200.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 200, 0 )
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="position" type="Label" parent="HBoxContainer"]
+margin_left = 204.0
+margin_top = 13.0
+margin_right = 274.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 70, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="foot" type="Label" parent="HBoxContainer"]
+margin_left = 278.0
+margin_top = 13.0
+margin_right = 338.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 60, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="league" type="Label" parent="HBoxContainer"]
+margin_left = 342.0
+margin_top = 13.0
+margin_right = 412.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 70, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="price" type="Label" parent="HBoxContainer"]
+margin_left = 416.0
+margin_right = 536.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 120, 40 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="age" type="Label" parent="HBoxContainer"]
+margin_left = 540.0
+margin_top = 13.0
+margin_right = 660.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 120, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="height" type="Label" parent="HBoxContainer"]
+margin_left = 664.0
+margin_top = 13.0
+margin_right = 774.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 110, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="overall" type="Label" parent="HBoxContainer"]
+margin_left = 778.0
+margin_top = 13.0
+margin_right = 893.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="crossing" type="Label" parent="HBoxContainer"]
+margin_left = 897.0
+margin_top = 13.0
+margin_right = 1012.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="finishing" type="Label" parent="HBoxContainer"]
+margin_left = 1016.0
+margin_top = 13.0
+margin_right = 1131.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="short_passing" type="Label" parent="HBoxContainer"]
+margin_left = 1135.0
+margin_top = 13.0
+margin_right = 1250.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="volleys" type="Label" parent="HBoxContainer"]
+margin_left = 1254.0
+margin_top = 13.0
+margin_right = 1369.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dribbling" type="Label" parent="HBoxContainer"]
+margin_left = 1373.0
+margin_top = 13.0
+margin_right = 1488.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+
+[node name="curve" type="Label" parent="HBoxContainer"]
+margin_left = 1492.0
+margin_top = 13.0
+margin_right = 1607.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="long_passing" type="Label" parent="HBoxContainer"]
+margin_left = 1611.0
+margin_top = 13.0
+margin_right = 1726.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ball_control" type="Label" parent="HBoxContainer"]
+margin_left = 1730.0
+margin_top = 13.0
+margin_right = 1845.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="acceleration" type="Label" parent="HBoxContainer"]
+margin_left = 1849.0
+margin_top = 13.0
+margin_right = 1964.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprint_speed" type="Label" parent="HBoxContainer"]
+margin_left = 1968.0
+margin_top = 13.0
+margin_right = 2083.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="agility" type="Label" parent="HBoxContainer"]
+margin_left = 2087.0
+margin_top = 13.0
+margin_right = 2202.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="reactions" type="Label" parent="HBoxContainer"]
+margin_left = 2206.0
+margin_top = 13.0
+margin_right = 2321.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="balance" type="Label" parent="HBoxContainer"]
+margin_left = 2325.0
+margin_top = 13.0
+margin_right = 2440.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+
+[node name="shot_power" type="Label" parent="HBoxContainer"]
+margin_left = 2444.0
+margin_top = 13.0
+margin_right = 2559.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="strength" type="Label" parent="HBoxContainer"]
+margin_left = 2563.0
+margin_top = 13.0
+margin_right = 2678.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="long_shots" type="Label" parent="HBoxContainer"]
+margin_left = 2682.0
+margin_top = 13.0
+margin_right = 2797.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="aggression" type="Label" parent="HBoxContainer"]
+margin_left = 2801.0
+margin_top = 13.0
+margin_right = 2916.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="interceptions" type="Label" parent="HBoxContainer"]
+margin_left = 2920.0
+margin_top = 13.0
+margin_right = 3035.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="positioning" type="Label" parent="HBoxContainer"]
+margin_left = 3039.0
+margin_top = 13.0
+margin_right = 3154.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vision" type="Label" parent="HBoxContainer"]
+margin_left = 3158.0
+margin_top = 13.0
+margin_right = 3273.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="penalties" type="Label" parent="HBoxContainer"]
+margin_left = 3277.0
+margin_top = 13.0
+margin_right = 3392.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+
+[node name="marking" type="Label" parent="HBoxContainer"]
+margin_left = 3396.0
+margin_top = 13.0
+margin_right = 3511.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="standing_tackle" type="Label" parent="HBoxContainer"]
+margin_left = 3515.0
+margin_top = 13.0
+margin_right = 3630.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sliding_tackle" type="Label" parent="HBoxContainer"]
+margin_left = 3634.0
+margin_top = 13.0
+margin_right = 3749.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gk_diving" type="Label" parent="HBoxContainer"]
+margin_left = 3753.0
+margin_top = 13.0
+margin_right = 3868.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gk_handling" type="Label" parent="HBoxContainer"]
+margin_left = 3872.0
+margin_top = 13.0
+margin_right = 3987.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gk_kicking" type="Label" parent="HBoxContainer"]
+margin_left = 3991.0
+margin_top = 13.0
+margin_right = 4106.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gk_positioning" type="Label" parent="HBoxContainer"]
+margin_left = 4110.0
+margin_top = 13.0
+margin_right = 4225.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="gk_reflexes" type="Label" parent="HBoxContainer"]
+margin_left = 4229.0
+margin_top = 13.0
+margin_right = 4344.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 115, 0 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_right = 4332.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 4332, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/focus = SubResource( 1 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="."]
+margin_top = 40.0
+margin_right = 4332.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 4332, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
