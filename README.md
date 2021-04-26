@@ -1,4 +1,6 @@
 # FOOTBALLPROJECT_UI
 
-1. Installer Godot
-2. Importer le Projet
+## Pour tester le projet:
+
+1. cloner mon répo
+2. Exucuté le
