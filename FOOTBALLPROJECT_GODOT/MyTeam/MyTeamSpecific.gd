@@ -82,12 +82,9 @@ func _on_HTTPRequest_request_completed(result, response_code, headers, body):
 
 
 func _on_Button_pressed():
-	print(selected_player_name)
 	if selected_player_name == '':
 		return
 	else:
 		var _to_return = VarSelected.get_selected_players()
 		_to_return[selected_lbl] = selected_player_name
-		print(_to_return[selected_lbl])
 		VarSelected.set_selected_players(_to_return)
-		print(VarSelected.get_selected_players())

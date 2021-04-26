@@ -23,6 +23,7 @@ func _on_HTTPRequest_request_completed(result: int, response_code: int, headers:
 		notification.text = responce_body.result.error.capitalize()
 	else:
 		Routes.set_token(responce_body.result.access_token)
+		VarSelected.set_my_id(responce_body.result.user_id)
 		notification.text = "Sign in sucessful !"
 		yield(get_tree().create_timer(2.0), "timeout")
 		get_tree().change_scene("res://Menu/MainMenu.tscn")

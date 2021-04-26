@@ -215,7 +215,9 @@ margin_bottom = 560.0
 
 [node name="FadeIn" parent="." instance=ExtResource( 3 )]
 visible = false
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/LeftMenu/PlayBtn" to="." method="_on_PlayBtn_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/LeftMenu/MyTeamBtn" to="." method="_on_MyTeamBtn_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/LeftMenu/MarketBtn" to="." method="_on_MarketBtn_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/LeftMenu/FriendsBtn" to="." method="_on_FriendsBtn_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/LeftMenu/QuitBtn" to="." method="_on_QuitBtn_pressed"]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]

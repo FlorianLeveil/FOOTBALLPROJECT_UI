@@ -46,12 +46,11 @@ func compute_selected_player():
 	var _to_compute = VarSelected.get_selected_players()
 	var _index = 0
 	for key in dropdown_list:
-		print(dropdown_list[key].get_item_text(dropdown_list[key].get_selected_id()))
 		var _text = dropdown_list[key].get_item_text(dropdown_list[key].get_selected_id())
 		if _text == 'Select a player':
 			continue
 		_to_compute[key] = _text
-		_index += 1
+		_index += 1 
 	VarSelected.set_selected_players(_to_compute)
 	
 

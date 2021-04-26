@@ -177,7 +177,6 @@ func _on_Buy_pressed():
 		_panel_buy.get_node("Panel/VBoxContainer/PlayerNameLbl").text = _player_to_buy_name
 		_panel_buy.get_node("Panel/VBoxContainer/PriceIntLbl").text = _player_to_buy_price
 		_panel_buy.show()
-	print(Routes.HEADER)
 	http.request(Routes.GET_USER_MONEY, Routes.HEADER,false, HTTPClient.METHOD_GET)
 	var result := yield(http, "request_completed") as Array
 	
@@ -212,7 +211,6 @@ func _button_toggled(toggled, target):
 	var sell_mode = get_node("HBoxContainer3/col0/CheckButton").pressed
 	if sell_mode:
 		var _route = Routes.GET_USER_PLAYERS + "?" + _compute_filters()
-		print(_route)
 		http.request(_route, Routes.HEADER,false, HTTPClient.METHOD_GET)
 		var result := yield(http, "request_completed") as Array
 	else:
@@ -305,4 +303,3 @@ func _on_Back_pressed():
 
 func _on_FadeIn_fade_finished():
 	get_tree().change_scene("res://Menu/MainMenu.tscn")
-

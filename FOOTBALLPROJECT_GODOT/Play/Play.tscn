@@ -1,0 +1,261 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Play/Play.gd" type="Script" id=1]
+[ext_resource path="res://fade_in/FadeIn.tscn" type="PackedScene" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.109804, 0.254902, 0.0196078, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.109804, 0.254902, 0.0196078, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.109804, 0.254902, 0.0196078, 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 390.0
+margin_top = 210.0
+margin_right = 571.0
+margin_bottom = 260.0
+rect_min_size = Vector2( 500, 300 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HContainer" type="HBoxContainer" parent="."]
+margin_left = 415.0
+margin_top = 235.0
+margin_right = 865.0
+margin_bottom = 485.0
+rect_min_size = Vector2( 450, 250 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VContainer" type="VBoxContainer" parent="HContainer"]
+margin_right = 450.0
+margin_bottom = 250.0
+rect_min_size = Vector2( 450, 250 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Nav" type="HBoxContainer" parent="HContainer/VContainer"]
+margin_right = 450.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="OpponentBtn" type="Button" parent="HContainer/VContainer/Nav"]
+margin_right = 147.0
+margin_bottom = 50.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/pressed = SubResource( 1 )
+toggle_mode = true
+pressed = true
+text = "Opponent"
+
+[node name="FriendBtn" type="Button" parent="HContainer/VContainer/Nav"]
+margin_left = 151.0
+margin_right = 298.0
+margin_bottom = 50.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/pressed = SubResource( 2 )
+toggle_mode = true
+text = "Friend"
+
+[node name="IaBtn" type="Button" parent="HContainer/VContainer/Nav"]
+margin_left = 302.0
+margin_right = 450.0
+margin_bottom = 50.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/pressed = SubResource( 3 )
+toggle_mode = true
+text = "IA"
+
+[node name="OpponentContainer" type="HBoxContainer" parent="HContainer/VContainer" groups=[
+"opponent",
+]]
+margin_top = 54.0
+margin_right = 450.0
+margin_bottom = 196.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="lbl1" type="Label" parent="HContainer/VContainer/OpponentContainer"]
+margin_left = 103.0
+margin_top = 64.0
+margin_right = 347.0
+margin_bottom = 78.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Do you wanna play with an opponent ?"
+
+[node name="waitinglbl" type="Label" parent="HContainer/VContainer/OpponentContainer"]
+visible = false
+margin_left = 169.0
+margin_top = 89.0
+margin_right = 330.0
+margin_bottom = 103.0
+custom_colors/font_color = Color( 0.345098, 0.345098, 0.345098, 1 )
+text = "Waiting for a opponent ..."
+
+[node name="FriendContainer" type="HBoxContainer" parent="HContainer/VContainer" groups=[
+"friend",
+]]
+visible = false
+margin_left = 25.0
+margin_top = -221.0
+margin_right = 524.0
+margin_bottom = -29.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="NoAskContainer" type="VBoxContainer" parent="HContainer/VContainer/FriendContainer"]
+margin_right = 499.0
+margin_bottom = 192.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Label" type="Label" parent="HContainer/VContainer/FriendContainer/NoAskContainer"]
+margin_top = 77.0
+margin_right = 499.0
+margin_bottom = 91.0
+text = "Select a Friend:"
+align = 1
+valign = 1
+
+[node name="OptionButton" type="OptionButton" parent="HContainer/VContainer/FriendContainer/NoAskContainer"]
+margin_top = 95.0
+margin_right = 499.0
+margin_bottom = 115.0
+
+[node name="AskContainer" type="VBoxContainer" parent="HContainer/VContainer/FriendContainer"]
+visible = false
+margin_right = 499.0
+margin_bottom = 192.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="lbl1" type="Label" parent="HContainer/VContainer/FriendContainer/AskContainer"]
+margin_top = 71.0
+margin_right = 499.0
+margin_bottom = 101.0
+text = "Your Friend:"
+align = 1
+valign = 1
+
+[node name="FriendNameLbl" type="Label" parent="HContainer/VContainer/FriendContainer/AskContainer"]
+margin_top = 89.0
+margin_right = 499.0
+margin_bottom = 119.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Pierre des bois"
+align = 1
+valign = 1
+
+[node name="lbl2" type="Label" parent="HContainer/VContainer/FriendContainer/AskContainer"]
+margin_top = 107.0
+margin_right = 499.0
+margin_bottom = 137.0
+text = "wanna play with you."
+align = 1
+valign = 1
+
+[node name="IAContainer" type="HBoxContainer" parent="HContainer/VContainer" groups=[
+"ia",
+]]
+visible = false
+margin_left = 25.0
+margin_top = -221.0
+margin_right = 524.0
+margin_bottom = -29.0
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Label" type="Label" parent="HContainer/VContainer/IAContainer"]
+margin_left = 155.0
+margin_top = 89.0
+margin_right = 344.0
+margin_bottom = 103.0
+text = "Do you wanna play with a IA ?"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="HContainer/VContainer"]
+margin_top = 200.0
+margin_right = 450.0
+margin_bottom = 250.0
+rect_min_size = Vector2( 0, 50 )
+alignment = 1
+
+[node name="BackBtn" type="Button" parent="HContainer/VContainer/HBoxContainer2"]
+margin_left = 142.0
+margin_right = 184.0
+margin_bottom = 50.0
+text = "Back"
+
+[node name="SearchBtn" type="Button" parent="HContainer/VContainer/HBoxContainer2" groups=[
+"opponent",
+]]
+margin_left = 188.0
+margin_right = 307.0
+margin_bottom = 50.0
+text = "Search opponent"
+
+[node name="PlayIABtn" type="Button" parent="HContainer/VContainer/HBoxContainer2" groups=[
+"ia",
+]]
+visible = false
+margin_left = 167.0
+margin_right = 269.0
+margin_bottom = 50.0
+text = "Play versus IA"
+
+[node name="AcceptFriendBtn" type="Button" parent="HContainer/VContainer/HBoxContainer2" groups=[
+"friend",
+]]
+visible = false
+margin_left = 216.0
+margin_right = 272.0
+margin_bottom = 50.0
+text = "Accept"
+
+[node name="RejectFriendBtn" type="Button" parent="HContainer/VContainer/HBoxContainer2" groups=[
+"friend",
+]]
+visible = false
+margin_left = 246.0
+margin_right = 298.0
+margin_bottom = 50.0
+text = "Reject"
+
+[node name="AskFriendBtn" type="Button" parent="HContainer/VContainer/HBoxContainer2" groups=[
+"friend",
+]]
+visible = false
+margin_left = 239.0
+margin_right = 305.0
+margin_bottom = 50.0
+text = "Confront"
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="FadeIn" parent="." instance=ExtResource( 2 )]
+visible = false
+[connection signal="pressed" from="HContainer/VContainer/Nav/OpponentBtn" to="." method="_on_OpponentBtn_pressed"]
+[connection signal="pressed" from="HContainer/VContainer/Nav/FriendBtn" to="." method="_on_FriendBtn_pressed"]
+[connection signal="pressed" from="HContainer/VContainer/Nav/IaBtn" to="." method="_on_IaBtn_pressed"]
+[connection signal="pressed" from="HContainer/VContainer/HBoxContainer2/BackBtn" to="." method="_on_BackBtn_pressed"]
+[connection signal="pressed" from="HContainer/VContainer/HBoxContainer2/SearchBtn" to="." method="_on_SearchBtn_pressed"]
+[connection signal="pressed" from="HContainer/VContainer/HBoxContainer2/PlayIABtn" to="." method="_on_PlayIABtn_pressed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]
+[connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]

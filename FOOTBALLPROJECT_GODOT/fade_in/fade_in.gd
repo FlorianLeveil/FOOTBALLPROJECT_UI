@@ -7,5 +7,4 @@ func fade_in():
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
-	print(anim_name)
 	emit_signal("fade_finished")

@@ -80,6 +80,7 @@ text = "Password"
 margin_top = 187.0
 margin_right = 252.0
 margin_bottom = 211.0
+secret = true
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
 margin_top = 220.0

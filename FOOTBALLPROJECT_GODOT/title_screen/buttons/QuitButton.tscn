@@ -7,3 +7,4 @@ scene_to_load = "res://Register/Register.tscn"
 
 [node name="Label" parent="." index="0"]
 text = "Quit"
+[connection signal="pressed" from="." to="." method="_on_QuitButton_pressed"]
